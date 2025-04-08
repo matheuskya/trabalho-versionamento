@@ -1,0 +1,30 @@
+
+algoritmo "maior_numero"
+var
+   // Declarar as variáveis
+    numero1, numero2, numero3:inteiro
+inicio
+   // Ler os três números
+   escreva("Digite o primeiro número: ")
+   leia(numero1)
+
+
+   escreva("Digite o segundo número: ")
+   leia(numero2)
+
+
+   escreva("Digite o terceiro número: ")
+   leia(numero3)
+
+
+   // Verificar o maior número
+   se numero1 >= numero2 e numero1 >= numero3 então
+      escreva("O maior número é: ", numero1)
+   senao
+      se numero2 >= numero1 e numero2 >= numero3 então
+         escreva("O maior número é: ", numero2)
+      senao
+         escreva("O maior número é: ", numero3)
+      fimse
+   fimse
+fimalgoritmo
