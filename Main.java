@@ -73,6 +73,16 @@ public class Main {
         }
     }
 
+    public static void ex51(int N) {
+        int a = 1, b = 1;
+        for (int i = 1; i <= N; i++) {
+            System.out.print(a + " ");
+            int proximo = a + b;
+            a = b;
+            b = proximo;
+        }
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -84,6 +94,7 @@ public class Main {
         ex47(3, 4);
         ex48(10);
         ex50(10);
+        ex51(10);
     }
 
 
