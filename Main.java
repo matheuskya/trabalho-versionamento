@@ -37,13 +37,22 @@ public class Main {
         System.out.println("A média dos números é: " + media);
     }
 
+    public static void ex46(int A, int B) {
+        int quociente = 0;
+        while (A >= B) {
+            A -= B;
+            quociente++;
+        }
+        System.out.println("Quociente: " + quociente);
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
         ex42();
         ex41();
         ex44();
-        ex45();
+        ex45(1, 2, 3, 4, 5);
     }
 
 
