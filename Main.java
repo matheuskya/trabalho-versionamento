@@ -17,9 +17,16 @@ public class Main {
         }
     }
 
+    public static void ex41() {
+        for (int i = 99; i > 1; i--) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         ex1(10.2, 3.42);
         ex42();
+        ex41();
     }
 
 
