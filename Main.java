@@ -11,8 +11,15 @@ public class Main {
         System.out.println("perimetro: " + perimetro);
     }
 
+    public static void ex42() {
+        for (int i = 100; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         ex1(10.2, 3.42);
+        ex42();
     }
 
 
