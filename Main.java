@@ -53,6 +53,17 @@ public class Main {
         System.out.println("Resto: " + A);
     }
 
+    public static void ex48(int N) {
+        boolean primo = N > 1;
+        for (int i = 2; i <= Math.sqrt(N); i++) {
+            if (N % i == 0) {
+                primo = false;
+                break;
+            }
+        }
+        System.out.println(N + (primo ? " é primo" : " não é primo"));
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -61,6 +72,8 @@ public class Main {
         ex44();
         ex45(1, 2, 3, 4, 5);
         ex46(3, 4);
+        ex47(3, 4);
+        ex48(10);
     }
 
 
