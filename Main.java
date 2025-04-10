@@ -23,10 +23,21 @@ public class Main {
         }
     }
 
+    public static void ex44() {
+        int soma = 0;
+        for (int i = 1; i < 100 + 1; i++) {
+            System.out.println(i);
+            soma += i;
+        }
+        System.out.println("soma dos valores:" + soma);
+    }
+
     public static void main(String[] args) {
+        ex6();
         ex1(10.2, 3.42);
         ex42();
         ex41();
+        ex44();
     }
 
 
