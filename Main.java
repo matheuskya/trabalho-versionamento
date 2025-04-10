@@ -46,6 +46,13 @@ public class Main {
         System.out.println("Quociente: " + quociente);
     }
 
+    public static void ex47(int A, int B) {
+        while (A >= B) {
+            A -= B;
+        }
+        System.out.println("Resto: " + A);
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -53,6 +60,7 @@ public class Main {
         ex41();
         ex44();
         ex45(1, 2, 3, 4, 5);
+        ex46(3, 4);
     }
 
 
