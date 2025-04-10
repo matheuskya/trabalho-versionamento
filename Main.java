@@ -32,12 +32,18 @@ public class Main {
         System.out.println("soma dos valores:" + soma);
     }
 
+    public static void ex45(double num1, double num2, double num3, double num4, double num5) {
+        double media = (num1 + num2 + num3 + num4 + num5) / 5;
+        System.out.println("A média dos números é: " + media);
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
         ex42();
         ex41();
         ex44();
+        ex45();
     }
 
 
