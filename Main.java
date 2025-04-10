@@ -64,6 +64,15 @@ public class Main {
         System.out.println(N + (primo ? " é primo" : " não é primo"));
     }
 
+    public static void ex50(int soma) {
+        for (int d1 = 1; d1 <= 6; d1++) {
+            int d2 = soma - d1;
+            if (d2 >= 1 && d2 <= 6) {
+                System.out.println(d1 + " " + d2);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -74,6 +83,7 @@ public class Main {
         ex46(3, 4);
         ex47(3, 4);
         ex48(10);
+        ex50(10);
     }
 
 
