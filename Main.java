@@ -93,6 +93,17 @@ public class Main {
         }
     }
 
+    public static void ex53() {
+        int anos = 0;
+        double popA = 5_000_000, popB = 7_000_000;
+        while (popA <= popB) {
+            popA *= 1.03;
+            popB *= 1.02;
+            anos++;
+        }
+        System.out.println("Anos necessários: " + anos);
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -106,6 +117,7 @@ public class Main {
         ex50(10);
         ex51(10);
         ex52(1, 2, 4);
+        ex53();
 
     }
 
