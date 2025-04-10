@@ -104,6 +104,17 @@ public class Main {
         System.out.println("Anos necessários: " + anos);
     }
 
+    public static void ex54(int num) {
+        boolean triangular = false;
+        for (int i = 1; i * (i + 1) * (i + 2) <= num; i++) {
+            if (i * (i + 1) * (i + 2) == num) {
+                triangular = true;
+                break;
+            }
+        }
+        System.out.println(num + (triangular ? " é triangular" : " não é triangular"));
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -118,7 +129,8 @@ public class Main {
         ex51(10);
         ex52(1, 2, 4);
         ex53();
-
+        ex54(1);
+        
     }
 
 
