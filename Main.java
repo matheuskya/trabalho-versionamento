@@ -115,6 +115,13 @@ public class Main {
         System.out.println(num + (triangular ? " é triangular" : " não é triangular"));
     }
 
+    public static void ex61() {
+        int[] array = new int[20];
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Posição " + i + ": " + array[i]);
+        }
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -130,7 +137,8 @@ public class Main {
         ex52(1, 2, 4);
         ex53();
         ex54(1);
-        
+        ex61();
+
     }
 
 
