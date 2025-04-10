@@ -83,6 +83,16 @@ public class Main {
         }
     }
 
+    public static void ex52(int termo1, int termo2, int N) {
+        System.out.print(termo1 + " " + termo2 + " ");
+        for (int i = 3; i <= N; i++) {
+            int termo = (i % 2 == 1) ? termo2 + termo1 : termo2 - termo1;
+            System.out.print(termo + " ");
+            termo1 = termo2;
+            termo2 = termo;
+        }
+    }
+
     public static void main(String[] args) {
         ex6();
         ex1(10.2, 3.42);
@@ -95,6 +105,8 @@ public class Main {
         ex48(10);
         ex50(10);
         ex51(10);
+        ex52(1, 2, 4);
+
     }
 
 
